@@ -10,5 +10,5 @@ public interface CarrierService {
     void saveCarrier(Carrier carrier);
     Carrier getCarrierById(long id);
     void deleteCarrierById(long id);
-    Page<Carrier> findPaginated(int pageNo, int pageSize);
+    Page<Carrier> findPaginated(int pageNo, int pageSize, String sortField, String sortDirection);
 }
